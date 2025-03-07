@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng 8/3</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+        .message {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+            animation: fadeIn 2s ease-in-out;
+        }
+        h1 {
+            color: #ff4081;
+        }
+        p {
+            font-size: 20px;
+            color: #333;
+            font-weight: bold;
+        }
+        .marquee {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            position: absolute;
+            top: 10px;
+        }
+        .marquee span {
+            display: inline-block;
+            animation: marquee 10s linear infinite;
+            font-size: 24px;
+            color: #fff;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .image-container {
+            margin-top: 20px;
+            display: flex;
+            gap: 15px;
+            position: relative;
+        }
+        .image-container img {
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        .firework {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: transparent;
+            border-radius: 50%;
+            box-shadow: 0 0 20px 10px rgba(255, 215, 0, 0.8);
+            animation: fireworks 1.5s infinite alternate;
+        }
+        .firework.left {
+            top: -20px;
+            left: -60px;
+        }
+        .firework.right {
+            top: -20px;
+            right: -60px;
+        }
+        .falling-flowers, .floating-hearts {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        .flower, .heart {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            opacity: 0.8;
+            animation: fall 5s linear infinite;
+        }
+        .heart {
+            animation: float 4s ease-in-out infinite;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes marquee {
+            from { transform: translateX(100%); }
+            to { transform: translateX(-100%); }
+        }
+        @keyframes fireworks {
+            from { transform: scale(0.8); opacity: 1; }
+            to { transform: scale(1.5); opacity: 0; }
+        }
+        @keyframes fall {
+            from { transform: translateY(-100vh); }
+            to { transform: translateY(100vh); }
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0) scale(1); }
+            50% { transform: translateY(-20px) scale(1.2); }
+        }
+        .chat-box {
+            position: absolute;
+            bottom: 60px;
+            right: 20px;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+        .chat-box img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .chat-box a {
+            display: block;
+            text-decoration: none;
+            color: #ff4081;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    
+        <audio autoplay loop>
+            <source src="Long Cao - EM CỦA ANH ĐỪNG CỦA AI (Audio).mp3" type="audio/mpeg">
+            
+        </audio>
+        <script>
+            document.querySelector('audio').volume = 0.5;
+        </script></audio>
+        
+    </audio>
+    <div class="falling-flowers">
+        <img src="tim.jpg" class="flower" style="left:10%; animation-delay:0s;">
+        <img src="tim.jpg" class="flower" style="left:30%; animation-delay:1s;">
+        <img src="tim.jpg" class="flower" style="left:50%; animation-delay:2s;">
+        <img src="tim.jpg" class="flower" style="left:70%; animation-delay:3s;">
+        <img src="tim.jpg" class="flower" style="left:90%; animation-delay:4s;">
+    </div>
+    <div class="floating-hearts">
+        <img src="tim.jpg" class="heart" style="left:15%; animation-delay:1s;">
+        <img src="tim.jpg" class="heart" style="left:35%; animation-delay:2s;">
+        <img src="tim.jpg" class="heart" style="left:55%; animation-delay:3s;">
+        <img src="tim.jpg" class="heart" style="left:75%; animation-delay:4s;">
+        <img src="tim.jpg" class="heart" style="left:95%; animation-delay:5s;">
+    </div>
+    <div class="marquee"><span>💖 Chúc mừng ngày Quốc tế Phụ nữ 8/3! Chúc em luôn hạnh phúc và rạng rỡ! 💐</span></div>
+    <div class="message">
+        <h1>Chúc Mừng Ngày Quốc Tế Phụ Nữ 8/3 nha em yêu!</h1>
+        <p>Chúc Phương Anh luôn xinh đẹp, hạnh phúc và thành công trong cuộc sống!</p>
+    </div>
+    <div class="image-container">
+        <div class="firework left"></div>
+        <img src="ảnh.jpg" alt="Hoa chúc mừng">
+        <img src="hoa.jpg" alt="Quà tặng 8/3">
+        <img src="hihi.jpg" alt="Niềm vui ngày 8/3">
+        <div class="firework right"></div>
+    </div>
+    <div class="extra-message">
+        <p>🌷 Ngày 8/3 là ngày để tôn vinh những người phụ nữ tuyệt vời💝</p>
+        <p>💐 Chúc một ngày tràn ngập niềm vui, hạnh phúc và những điều tốt đẹp nhất đến với Phương Anh🎉</p>
+    </div>
+    <div class="chat-box">
+        <img src="me.jpg" alt="Ảnh của bạn">
+        <a href="https://www.facebook.com/Pnh2k6" target="_blank">Nhắn tin cho anh yêu tại đây💖</a>
+    </div>
+</body>
+</html>
